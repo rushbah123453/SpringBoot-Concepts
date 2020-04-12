@@ -1,0 +1,25 @@
+Responsibility of IOC-Container
+
+1)Find the Beans
+how it find beans ? Every class annotated with @ComponentScan is considered as bean
+
+2)Wiring Dependencies
+When we use @Autowired , this will wireup the dependencies
+
+3)Managing Lifecycle of Beans
+
+2 terms related to IOC Container
+
+1) Bean Factory
+2) ApplicationContext == BeanFactory ++ (Updated version of BeanFactory)
+Application context have webApplicationcintext and webApplication
+
+
+@Component- Spring Should manage the bean
+@Autowired- spring should find matching bean and wire dependency in
+
+@ComponentScan scans all the class files specified under the base package i.e. search for the files under this package
+for any annoted java files with @Component,
+@Repository, @Service and @Controller and if it finds any of them it will register it into the bean factory.
+
+

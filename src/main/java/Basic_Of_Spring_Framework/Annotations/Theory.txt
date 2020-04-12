@@ -1,0 +1,21 @@
+@Component- very Generic, used by IOC to identify class for which beans are need to be created
+
+@Repository - Added to DAO Layer , whenever we get exceptions in jdbc , it is used to convert it into spring exception
+@Repository is used for  automatic exception translation in your persistence layer.
+@Repository  is stereotype for persistence layer
+@Repository’s job is to catch platform specific exceptions and re-throw them as one of Spring’s unified unchecked exception.
+For this, we’re provided with PersistenceExceptionTranslationPostProcessor
+
+
+
+@Controller is stereotype for presentation layer
+The dispatcher scans the classes annotated with @Controller and detects methods annotated with @RequestMapping annotations within them.
+We can use @RequestMapping on/in only those methods whose classes are annotated with @Controller and it will
+NOT work with @Component, @Service, @Repository etc...
+
+
+@Service is stereotype for Service layer
+
+
+@Lazy- Beans annotated with @Lazy will be initialized/created only when it will be called not during Application startup
+

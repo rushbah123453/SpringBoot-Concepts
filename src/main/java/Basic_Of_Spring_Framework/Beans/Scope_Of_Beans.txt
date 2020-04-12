@@ -1,0 +1,47 @@
+Spring have 5 scope of Beans
+
+1) Singleton(By Default): Once instance per spring context
+
+
+2)Prototype: New bean is created whenever request
+
+
+3)Request: One bean per HTTP Request, It is Webaware spring Application context
+
+
+4)Session: One Bean per HTTP Session , It is Webaware spring Application context
+Keycloack Example , we used to call keycloack bean to get user information
+for authorization for each and every service call , so here for a session it is maintained
+and we get single bean
+
+
+5)Global :Used for portlets .
+
+
+
+Prototype  vs Request ?
+
+Prototype creates a brand new instance everytime you call getBean on the ApplicationContext.
+Whereas for Request, only one instance is created for an HttpRequest. So in a single HttpRequest,
+I can call getBean twice on Application and there will only ever be one bean instantiated, whereas that
+same bean scoped to Prototype in that same single HttpRequest would get 2 different instances.
+
+
+Prototype scope
+
+Mark mark1 = context.getBean("mark");
+Mark mark2 = context.getBean("mark");
+mark1 == mark2; //This will return false
+
+HttpRequest scope
+
+Mark mark1 = context.getBean("mark");
+Mark mark2 = context.getBean("mark");
+mark1 == mark2; //This will return true
+
+
+
+Are spring Beans Thread safe ?
+No , there are not .You have to write code for it , spring doesnt guarentees thread safety for beans
+
+Singleton in spring - It is one instance of bean per container/Application Context

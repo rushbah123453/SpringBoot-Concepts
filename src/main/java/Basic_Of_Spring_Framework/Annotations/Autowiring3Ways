@@ -1,0 +1,8 @@
+We can Autowire Bean in 3 ways
+
+1) byType - checks by class or interface name
+2) byName - checks by variable name
+3) constructor - same as dependency injection
+
+
+

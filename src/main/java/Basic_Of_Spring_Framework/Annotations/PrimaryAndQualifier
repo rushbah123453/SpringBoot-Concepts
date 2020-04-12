@@ -1,0 +1,19 @@
+Suppose we have a situation :
+
+We have autowired a bean
+@Autowired
+SortingAlgorithm myalgo;
+
+we have 2 classes that implements SortingAlgorithm interface
+1)QuickSort
+2)SelectionSort
+
+Now there are 2 classes that implements SortingAlgorithm , so spring will be confused
+of which type the beans should be created
+
+No UniqueBean Exception will be thrown
+
+- To avoid this use
+1)@Primary on one of the class
+2)use @Qualifier("myalgo") on one of class
+3)change myalgo variable name to one of the class name i.e QuickSort or SelectionSort
