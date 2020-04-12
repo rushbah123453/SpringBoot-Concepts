@@ -1,0 +1,16 @@
+When user hits a url , what exactly happens ? Suppose user hits http://www.rushabh.com/data
+
+1) User Hits this url from Broswer
+
+2) Dispatcher servelets get the url, and using Handler maping it will map to the relevant controller method
+
+3)It will also check the type , GET POST,PUT DELETE
+
+4) After matching it handles the control to method and the calls the services and then DAO layer
+
+5) And then response is sent
+
+Summary :
+
+Dispatcher servelet acts like front controller , then it delegates the request to appropiate controller
+and then to appropriate serviceto return response

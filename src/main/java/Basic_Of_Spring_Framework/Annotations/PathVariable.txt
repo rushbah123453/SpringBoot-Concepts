@@ -1,0 +1,18 @@
+@PathVariable - It is used to extract data from url itself
+
+http://www.api.com/subject/1
+
+Now there is a situation where we need to extract 1 from the api
+
+So : value="/subject/{id}"
+
+@PathVariable int id
+
+From this we can extract id from url itself
+
+
+For Multiple PathVariable:
+
+@RequestMapping(value = "/{app}/conf/{fnm}", method=RequestMethod.GET)
+public ResponseEntity<?> getConf(@PathVariable String app, @PathVariable String fnm)
+

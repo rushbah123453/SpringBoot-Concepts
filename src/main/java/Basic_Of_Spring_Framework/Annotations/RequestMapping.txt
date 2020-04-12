@@ -1,0 +1,1 @@
+@RequestMapping - It is used to map specific url to specific controller

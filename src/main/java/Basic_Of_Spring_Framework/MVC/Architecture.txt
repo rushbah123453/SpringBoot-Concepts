@@ -1,0 +1,18 @@
+Model 1 Architecture
+
+1) Browser -> JSP1 or JSP2 -> Model
+It becomes very complex to maintain and update as everything is written in JSP
+JSP here will contain the services , controller , and view
+
+
+Model 2 Architecture
+1) Broswer-> Servelets 1 and Servelets 2 -> model  -> View , the view shows the data extracted from view
+A request comes through browser , servelts get its and extracts the relevant data and shows it in view
+This is decoupled as compared to model 2 architecture
+
+
+FrontController Architecture
+1) Browser->FrontController->Servelts ->Model->view
+Here we have an umbrella , where all request type comes and then maps to servelets
+Front controller can be used to apply universal security , filters etc
+

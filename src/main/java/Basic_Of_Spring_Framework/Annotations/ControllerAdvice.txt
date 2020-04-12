@@ -1,0 +1,6 @@
+If we have to handle common exception which is accross multiple controllers , what can we use ?
+
+@ControllerAdvice - Give this annotation at class level
+And make methods for handling the exceptions with annotation of @ExceptionHandler(value=Exception.class)
+
+(value=Exception.class) any exception of Exception.class or subtype will be handled here

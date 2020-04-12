@@ -1,0 +1,9 @@
+@Valid - This validates the Json coming from the request
+
+If there are some errors , like validation errors it will get binded in
+
+@BindingResult - This will catch the validation errors
+
+Example : @BindingResult result
+result.hasErrors()
+
