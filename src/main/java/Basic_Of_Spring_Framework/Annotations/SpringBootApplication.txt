@@ -1,0 +1,11 @@
+@SpringBootApplication
+
+This annotation have 3 features
+
+1)Enable AutoConfiguration
+2)ComponentScans all packages under it
+3)Sets springBoot Configurations
+
+
+
+@AutoConfiguration -SpringBoot checks the classpath ie available jars , and it will auto config that

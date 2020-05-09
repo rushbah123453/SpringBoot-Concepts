@@ -1,0 +1,9 @@
+OpenApi Specs can be written in
+1)Json
+2)Yaml
+
+Design-first users: use Swagger Codegen to generate a server stub for your API.
+The only thing left is to implement the server logic – and your API is ready to go live!
+Use Swagger Codegen to generate client libraries for your API in over 40 languages.
+Use Swagger UI to generate interactive API documentation that lets your users try out the API calls directly in the browser.
+
